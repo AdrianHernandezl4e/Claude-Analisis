@@ -6,20 +6,20 @@ on:
 jobs:
   analysis:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-
+       
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-
-      - name: Install deps
-        run: pip install -r requirements.txt
-
-      - name: Ejecutar análisis ChatGPT
+       
+      - name: Install dependencies
+        run: pip install anthropic
+       
+      - name: Ejecutar análisis Claude
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python analyze.py
