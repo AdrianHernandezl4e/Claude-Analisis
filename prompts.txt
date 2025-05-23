@@ -1,0 +1,8 @@
+Analiza el siguiente código y busca posibles errores, vulnerabilidades o sugerencias de optimización.
+Considera específicamente:\n
+1. Violaciones de principios SOLID\n
+2. Code smells comunes\n
+3. Patrones de diseño inadecuados\n
+4. Complejidad ciclomática excesiva\n
+5. Problemas de rendimiento potenciales\n
+       
