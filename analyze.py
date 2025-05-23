@@ -65,7 +65,7 @@ for i, prompt in enumerate(prompts, 1):
             ]
         )
         
-        print(f"\n=== Análisis ("{prompt}") ===\n")
+        print(f"\n=== Análisis ('{prompt}') ===\n")
         print(response.content[0].text)
         
     except Exception as e:
